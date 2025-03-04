@@ -24,12 +24,10 @@ ifEmpty() {
         console.log("Черга порожня!!!")
         return true;
     }
-    else {
-        return false;
-    }
+    else return false;
 }
 
-delate()    
+delete()    
 {
     if(this.ifEmpty() == false)
         {
@@ -57,23 +55,29 @@ clear()
     }
     }
 }
+get() {
+    if (this.ifEmpty() == false)
+        return this.#students[0];
 }
+
+}
+
 
 function main() {
 let queue = new Queue();
-queue.add(new NewArray("Smit", 23));
-queue.add(new NewArray("Shtrimplha",4));
-queue.add(new NewArray("Bublik",50));
-queue.add(new NewArray("Huselnytsa",100));
-queue.add(new NewArray("Hizzatullin",100));
-queue.add(new NewArray("Jonhson",3));
-queue.add(new NewArray("German",28));
-queue.add(new NewArray("Romanovich",69));
-queue.add(new NewArray("Zyb",34));
-queue.add(new NewArray("Zib",83));
-queue.add(new NewArray("Zab",12));
+// queue.add(new NewArray("Smith", 23));
+// queue.add(new NewArray("Johnson",4));
+// queue.add(new NewArray("Williams",50));
+// queue.add(new NewArray("Brown",100));
+// queue.add(new NewArray("Taylor",98));
+// queue.add(new NewArray("Anderson",3));
+// queue.add(new NewArray("Thomas",28));
+// queue.add(new NewArray("White",69));
+// queue.add(new NewArray("Harris",34));
+// queue.add(new NewArray("Martin",83));
+// queue.add(new NewArray("Walker",12));
 
-queue.showElements();
-
+let student = queue.get();
+console.log(student.surnameStudent)
 }
 main();

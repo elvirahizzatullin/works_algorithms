@@ -65,17 +65,17 @@ get() {
 
 function main() {
 let queue = new Queue();
-// queue.add(new NewArray("Smith", 23));
-// queue.add(new NewArray("Johnson",4));
-// queue.add(new NewArray("Williams",50));
-// queue.add(new NewArray("Brown",100));
-// queue.add(new NewArray("Taylor",98));
-// queue.add(new NewArray("Anderson",3));
-// queue.add(new NewArray("Thomas",28));
-// queue.add(new NewArray("White",69));
-// queue.add(new NewArray("Harris",34));
-// queue.add(new NewArray("Martin",83));
-// queue.add(new NewArray("Walker",12));
+queue.add(new NewArray("Smith", 23));
+queue.add(new NewArray("Johnson",4));
+queue.add(new NewArray("Williams",50));
+queue.add(new NewArray("Brown",100));
+queue.add(new NewArray("Taylor",98));
+queue.add(new NewArray("Anderson",3));
+queue.add(new NewArray("Thomas",28));
+queue.add(new NewArray("White",69));
+queue.add(new NewArray("Harris",34));
+queue.add(new NewArray("Martin",83));
+queue.add(new NewArray("Walker",12));
 
 let student = queue.get();
 console.log(student.surnameStudent)

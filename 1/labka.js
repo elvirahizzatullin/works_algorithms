@@ -77,7 +77,7 @@ queue.add(new NewArray("Harris",34));
 queue.add(new NewArray("Martin",83));
 queue.add(new NewArray("Walker",12));
 
-let student = queue.get();
-console.log(student.surnameStudent)
+
+queue.showElements();
 }
 main();

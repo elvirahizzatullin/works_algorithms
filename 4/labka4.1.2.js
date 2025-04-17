@@ -21,8 +21,8 @@ class calculateController {
             }
             else if(this.x > 4 && this.x < 7)
             {   
-                this.result = Math.sqrt(this.a * this.x);
                 if(this.a * this.x < 0) err = 1;
+                else this.result = Math.sqrt(this.a * this.x); 
             }
         }
         else err = 2
@@ -36,6 +36,7 @@ class calculateController {
                 break;
             default:
                 console.log("Все добре")
+                break;
           }
         }
         

@@ -18,11 +18,13 @@ if(this.x == 4)
 this.result = Math.pow(this.x, 3) - (this.b * this.x) + 1; 
 }
 
+if(this.a * this.x < 0)  throw Error("Помилка: підкореневий вираз від’ємний");
+
 if(this.x > 4 && this.x < 7)
 {   
-if(this.a * this.x < 0)  throw Error("Помилка: підкореневий вираз від’ємний");
 this.result = Math.sqrt(this.a * this.x);
 }
+
 if(this.x >= 7) throw Error("Помилка: функція на заданому проміжку не визначена") 
 }
 
